@@ -13,7 +13,7 @@ const Footer = () => {
       <section className="footer">
         <div className="top-footer">
         <div className="footerBox">
-          <img src={FLogo} className='flogo' />
+          <img src={FLogo} alt="logo" className='flogo' />
           <div className="socialLogo">
             <img src={Facebook} alt="" />
             <img src={Twiter} alt="" />
