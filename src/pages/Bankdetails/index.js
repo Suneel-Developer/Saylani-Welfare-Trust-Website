@@ -16,7 +16,7 @@ const BankDetails = () => {
         <div className="accordinBoxs">
         
         <div className="accordin">
-          <img src={mcbLogo} style={{ width: "200px" }} />
+          <img src={mcbLogo} alt="mcb logo" style={{ width: "200px" }} />
           <Accordion defaultActiveKey="0" style={{ width: "100%" }}>
             <Accordion.Item eventKey="0">
               <Accordion.Header>For Wajiba/Zakat Donations</Accordion.Header>
@@ -97,7 +97,7 @@ const BankDetails = () => {
           </Accordion>
         </div>
         <div className="accordin">
-          <img src={dibLogo} style={{ width: "200px" }} />
+          <img src={dibLogo} alt="DIB Logo" style={{ width: "200px" }} />
           <Accordion defaultActiveKey="0" style={{ width: "100%" }}>
             <Accordion.Item eventKey="0">
               <Accordion.Header>For Wajiba/Zakat Donations</Accordion.Header>
