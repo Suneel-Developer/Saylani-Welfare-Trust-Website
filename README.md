@@ -1,70 +1,183 @@
-# Getting Started with Create React App
+# Saylani Welfare Trust — React Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+A fully responsive multi-page React.js website for **Saylani Welfare International Trust** — Pakistan's largest NGO serving 300,000+ people daily across 125+ branches nationwide.
 
-In the project directory, you can run:
+## 🌐 Live Demo
 
-### `npm start`
+**[https://saylani-welfare-website-suneel.vercel.app](https://saylani-welfare-website-suneel.vercel.app)**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📌 About the Project
 
-### `npm test`
+This project is a front-end React.js recreation of the official Saylani Welfare Trust website. The goal was to build a complete, real-world multi-page charity website with professional UI, clean component architecture, and full mobile responsiveness.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Saylani Welfare International Trust was established in May 1999 by Maulana Bashir Ahmed Farooqui and is headquartered in Bahadurabad, Karachi. It provides free food, healthcare, IT training, education, and disaster relief to millions of Pakistanis every year.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Pages & Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pages
+- **Home** — Hero section, What We Are Doing, programs showcase, impact stats (300K food daily, 20K family adoption, 25K education, 125K medical monthly), News section, Saylani Guide newsletter, Footer
+- **About** — Organization introduction, history, Saylani Health services, Saylani Education programs, newsletter section
+- **Branches** — Branch locations across Pakistan
+- **News** — Latest news and updates
+- **Contact** — Contact form and office details
+- **Bank Details** — Donation bank account information
+- **Single Page** — Detailed single news/program view
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Features
+- Multi-page routing with React Router DOM
+- Fully responsive — mobile, tablet, and desktop
+- Top header bar with contact info and language toggle
+- Navigation with Donate Now and Be a Sponsor buttons
+- Impact statistics section (Food, Family Adoption, Education, Medical)
+- News cards with date badges and view details links
+- Saylani Guide email subscription section
+- Footer with About, Explore, and Contact columns
+- Social media links (Facebook, Twitter, WhatsApp)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend UI library |
+| React Router DOM | Multi-page client-side routing |
+| CSS3 | Component styling |
+| Vercel | Hosting & deployment |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Actual Project Structure
 
-## Learn More
+```
+saylani-welfare/
+├── public/
+├── src/
+│   ├── assets/                  # Images and static assets
+│   ├── components/
+│   │   ├── Footer/
+│   │   │   └── Footer.jsx
+│   │   ├── Funding/
+│   │   ├── Header/
+│   │   │   └── Header.jsx
+│   │   ├── PaginationComponent/
+│   │   ├── ServiceComp/
+│   │   ├── SubscribeBox/
+│   │   │   └── SubscribeBox.jsx
+│   │   ├── TopHeader/
+│   │   │   └── TopHeader.jsx
+│   │   └── newsComponents/
+│   ├── details/
+│   │   ├── LocationData.js
+│   │   └── newsdata.js
+│   ├── pages/
+│   │   ├── About/
+│   │   │   └── About.jsx
+│   │   ├── Bankdetails/
+│   │   ├── Contact/
+│   │   ├── Home/
+│   │   │   └── Home.jsx
+│   │   ├── News/
+│   │   └── singlePage/
+│   │       └── SinglePage.jsx
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .gitignore
+├── README.md
+├── package-lock.json
+└── package.json
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🗺️ App Routes
 
-### Code Splitting
+| Route | Component | Description |
+|---|---|---|
+| `/` | `<Home />` | Main homepage |
+| `/about` | `<About />` | About Saylani |
+| `/nman` | `<News />` | News listing |
+| `/contact` | `<Contact />` | Contact page |
+| `/branches` | `<Branches />` | Branch locations |
+| `/bankdetails` | `<BankDetails />` | Donation bank info |
+| `/singlepage` | `<SinglePage />` | Single article view |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🚀 Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Prerequisites
+- Node.js v16 or higher
+- npm
 
-### Making a Progressive Web App
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+# Clone the repository
+git clone https://github.com/Suneel-Developer/saylani_welfare_website__Reactjs.git
 
-### Advanced Configuration
+# Navigate into the project
+cd saylani_welfare_website__Reactjs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Install dependencies
+npm install
 
-### Deployment
+# Start the development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### `npm run build` fails to minify
+### Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run build
+```
+
+---
+
+## 📱 Responsive Design
+
+Fully tested and responsive across:
+- Mobile (320px and above)
+- Tablet (768px)
+- Desktop (1280px and above)
+
+---
+
+## 🎯 What I Learned
+
+- Building a complete multi-page charity/NGO website with React
+- Clean component-based architecture with reusable components
+- React Router DOM for client-side routing with 7+ pages
+- Managing static data through separate data files (`newsdata.js`, `LocationData.js`)
+- CSS3 responsive design across all screen sizes
+- Deploying React (CRA) apps on Vercel with automatic CI/CD
+
+---
+
+## ⚠️ Disclaimer
+
+This is a **UI recreation** built for educational and portfolio purposes only. All content, branding, logo, and organizational identity belongs to [Saylani Welfare International Trust](https://saylaniwelfare.com). This project is not affiliated with or endorsed by Saylani Welfare Trust.
+
+---
+
+## 👨‍💻 Developer
+
+**Suneel**
+- GitHub: [@Suneel-Developer](https://github.com/Suneel-Developer)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
