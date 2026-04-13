@@ -9,6 +9,7 @@ A fully responsive multi-page React.js website for **Saylani Welfare Internation
 
 ---
 
+
 ## 📌 About the Project
 
 This project is a front-end React.js recreation of the official Saylani Welfare Trust website. The goal was to build a complete, real-world multi-page charity website with professional UI, clean component architecture, and full mobile responsiveness.
